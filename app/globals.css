@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@keyframes throw {
+  0%   { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+  60%  { transform: translate(180px, -220px) rotate(300deg); opacity: 1; }
+  100% { transform: translate(260px, -320px) rotate(420deg); opacity: 0; }
+}
+
+.rock-throw {
+  animation: throw 0.6s ease-in forwards;
+}
